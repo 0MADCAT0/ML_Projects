@@ -1,0 +1,1 @@
+This Repisotory have projects of my own ideas other than teaching materials
