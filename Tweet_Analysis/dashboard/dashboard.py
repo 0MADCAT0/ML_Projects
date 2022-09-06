@@ -4,34 +4,135 @@ from PIL import Image
 
 # Page setting
 st.set_page_config(layout="wide")
-st.title('Tweet Analysis for Searchterm "TEKNOFEST"')
-st.sidebar.markdown("Visualization Selection")
+st.title('Tweet Analysis for Keyword "TEKNOFEST"')
 
-# Add a selectbox to the sidebar:
-leftside = st.sidebar.selectbox(
+left_chart,_, right_chart = st.columns([5, 2, 5])
+
+with left_chart:
+    leftside = st.radio(
     'Please select a chart for visualization1',
     ('Top 10 Hashtags', 
     'Top 20 Mentions', 
     'Mostliked Tweet Owners',
+    "Top 20 Emojis",
+    "Number Of Emojis in a Tweet",
+    "Top 10 Retweet Owners",
+    "Top 20 Tweeter",
+    "Word Cloud",
+    "Ngram of Words",
+    "Sentiment (Bullying)",
+    "Sentiment (Classification)",
+    "Sentiment (Polarity)",
     )
 )
 
-rightside = st.sidebar.selectbox(
+with right_chart:
+    rightside = st.selectbox(
     'Please select a chart for visualization2',
     ('Top 10 Hashtags', 
     'Top 20 Mentions', 
     'Mostliked Tweet Owners',
+    "Top 20 Emojis",
+    "Number Of Emojis in a Tweet",
+    "Top 10 Retweet Owners",
+    "Top 20 Tweeter",
+    "Word Cloud",
+    "Ngram of Words",
+    "Sentiment (Bullying)",
+    "Sentiment (Classification)",
+    "Sentiment (Polarity)",
     )
 )
 
+
+
+
+
+
 a1, a2 = st.columns(2)
+
+
+# left side charts
 if leftside == 'Top 10 Hashtags':
     left = 'charts//hashtag_top_10.png'
 
+if leftside == 'Top 20 Mentions':
+    left = 'charts\\mention_top_20.png'
+
+if leftside == 'Mostliked Tweet Owners':
+    left = 'charts\\most_liked_twt_owners.png'
+
+if leftside == 'Top 20 Emojis':
+    left = 'charts\\emojis_top_20.png'
+
+if leftside == 'Number Of Emojis in a Tweet':
+    left = 'charts\\emoji_count_in_twt.png'
+
+if leftside == 'Top 10 Retweet Owners':
+    left = 'charts\\retwt_owners_top_10.png'
+
+if leftside == 'Top 20 Tweeter':
+    left = 'charts\\twter_top_20.png'
+
+if leftside == 'Word Cloud':
+    left = 'charts\\word_cloud.png'
+
+if leftside == 'Ngram of Words':
+    left = 'charts\\bigram _chart.png'
+
+if leftside == 'Sentiment (Bullying)':
+    left = 'charts\\bullying_of_twt.png'
+
+if leftside == 'Sentiment (Classification)':
+    left = 'charts\\twt_class.png'
+
+if leftside == 'Sentiment (Polarity)':
+    left = 'charts\\polarity_of_twt.png'
+
+
+
+
+
+# rigth side charts
+if rightside == 'Top 10 Hashtags':
+    right = 'charts//hashtag_top_10.png'
+
 if rightside == 'Top 20 Mentions':
-    right = 'charts\mention_top_20.png'
+    right = 'charts\\mention_top_20.png'
+
+if rightside == 'Mostliked Tweet Owners':
+    right = 'charts\\most_liked_twt_owners.png'
+
+if rightside == 'Top 20 Emojis':
+    right = 'charts\\emojis_top_20.png'
+
+if rightside == 'Number Of Emojis in a Tweet':
+    right = 'charts\\emoji_count_in_twt.png'
+
+if rightside == 'Top 10 Retweet Owners':
+    right = 'charts\\retwt_owners_top_10.png'
+
+if rightside == 'Top 20 Tweeter':
+    right = 'charts\\twter_top_20.png'
+
+if rightside == 'Word Cloud':
+    right = 'charts\\word_cloud.png'
+
+if rightside == 'Ngram of Words':
+    right = 'charts\\bigram _chart.png'
+
+if rightside == 'Sentiment (Bullying)':
+    right = 'charts\\bullying_of_twt.png'
+
+if rightside == 'Sentiment (Classification)':
+    right = 'charts\\twt_class.png'
+
+if rightside == 'Sentiment (Polarity)':
+    right = 'charts\\polarity_of_twt.png'
 
 
 
 a1.image(Image.open(left))
 a2.image(Image.open(right))
+
+
