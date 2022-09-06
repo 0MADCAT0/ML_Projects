@@ -54,40 +54,40 @@ a1, a2 = st.columns(2)
 
 # left side charts
 if leftside == 'Top 10 Hashtags':
-    left = 'charts//hashtag_top_10.png'
+    left = 'hashtag_top_10.png'
 
 if leftside == 'Top 20 Mentions':
-    left = 'charts\\mention_top_20.png'
+    left = 'mention_top_20.png'
 
 if leftside == 'Mostliked Tweet Owners':
-    left = 'charts\\most_liked_twt_owners.png'
+    left = 'most_liked_twt_owners.png'
 
 if leftside == 'Top 20 Emojis':
-    left = 'charts\\emojis_top_20.png'
+    left = 'emojis_top_20.png'
 
 if leftside == 'Number Of Emojis in a Tweet':
-    left = 'charts\\emoji_count_in_twt.png'
+    left = 'emoji_count_in_twt.png'
 
 if leftside == 'Top 10 Retweet Owners':
-    left = 'charts\\retwt_owners_top_10.png'
+    left = 'retwt_owners_top_10.png'
 
 if leftside == 'Top 20 Tweeter':
-    left = 'charts\\twter_top_20.png'
+    left = 'twter_top_20.png'
 
 if leftside == 'Word Cloud':
-    left = 'charts\\word_cloud.png'
+    left = 'word_cloud.png'
 
 if leftside == 'Ngram of Words':
-    left = 'charts\\bigram _chart.png'
+    left = 'bigram _chart.png'
 
 if leftside == 'Sentiment (Bullying)':
-    left = 'charts\\bullying_of_twt.png'
+    left = 'bullying_of_twt.png'
 
 if leftside == 'Sentiment (Classification)':
-    left = 'charts\\twt_class.png'
+    left = 'twt_class.png'
 
 if leftside == 'Sentiment (Polarity)':
-    left = 'charts\\polarity_of_twt.png'
+    left = 'polarity_of_twt.png'
 
 
 
@@ -95,40 +95,40 @@ if leftside == 'Sentiment (Polarity)':
 
 # rigth side charts
 if rightside == 'Top 10 Hashtags':
-    right = 'charts//hashtag_top_10.png'
+    right = 'hashtag_top_10.png'
 
 if rightside == 'Top 20 Mentions':
-    right = 'charts\\mention_top_20.png'
+    right = 'mention_top_20.png'
 
 if rightside == 'Mostliked Tweet Owners':
-    right = 'charts\\most_liked_twt_owners.png'
+    right = 'most_liked_twt_owners.png'
 
 if rightside == 'Top 20 Emojis':
-    right = 'charts\\emojis_top_20.png'
+    right = 'emojis_top_20.png'
 
 if rightside == 'Number Of Emojis in a Tweet':
-    right = 'charts\\emoji_count_in_twt.png'
+    right = 'emoji_count_in_twt.png'
 
 if rightside == 'Top 10 Retweet Owners':
-    right = 'charts\\retwt_owners_top_10.png'
+    right = 'retwt_owners_top_10.png'
 
 if rightside == 'Top 20 Tweeter':
-    right = 'charts\\twter_top_20.png'
+    right = 'twter_top_20.png'
 
 if rightside == 'Word Cloud':
-    right = 'charts\\word_cloud.png'
+    right = 'word_cloud.png'
 
 if rightside == 'Ngram of Words':
-    right = 'charts\\bigram _chart.png'
+    right = 'bigram _chart.png'
 
 if rightside == 'Sentiment (Bullying)':
-    right = 'charts\\bullying_of_twt.png'
+    right = 'bullying_of_twt.png'
 
 if rightside == 'Sentiment (Classification)':
-    right = 'charts\\twt_class.png'
+    right = 'twt_class.png'
 
 if rightside == 'Sentiment (Polarity)':
-    right = 'charts\\polarity_of_twt.png'
+    right = 'polarity_of_twt.png'
 
 
 
