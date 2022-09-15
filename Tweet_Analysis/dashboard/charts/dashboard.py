@@ -6,42 +6,42 @@ from PIL import Image
 st.set_page_config(layout="wide")
 st.title('Tweet Analysis for Keyword "TEKNOFEST"')
 
-left_chart,_, right_chart = st.columns([5, 2, 5])
+#left_chart,_, right_chart = st.columns([5, 2, 5])
 
-with left_chart:
-    leftside = st.radio(
-    'Please select a chart for visualization1',
-    ('Top 10 Hashtags', 
-    'Top 20 Mentions', 
-    'Mostliked Tweet Owners',
-    "Top 20 Emojis",
-    "Number Of Emojis in a Tweet",
-    "Top 10 Retweet Owners",
-    "Top 20 Tweeter",
-    "Word Cloud",
-    "Ngram of Words",
-    "Sentiment (Bullying)",
-    "Sentiment (Classification)",
-    "Sentiment (Polarity)",
-    )
+
+leftside = st.selectbox(
+'Please select a chart for visualization1',
+('Top 10 Hashtags', 
+'Top 20 Mentions', 
+'Mostliked Tweet Owners',
+"Top 20 Emojis",
+"Number Of Emojis in a Tweet",
+"Top 10 Retweet Owners",
+"Top 20 Tweeter",
+"Word Cloud",
+"Ngram of Words",
+"Sentiment (Bullying)",
+"Sentiment (Classification)",
+"Sentiment (Polarity)",
+)
 )
 
-with right_chart:
-    rightside = st.selectbox(
-    'Please select a chart for visualization2',
-    ('Top 10 Hashtags', 
-    'Top 20 Mentions', 
-    'Mostliked Tweet Owners',
-    "Top 20 Emojis",
-    "Number Of Emojis in a Tweet",
-    "Top 10 Retweet Owners",
-    "Top 20 Tweeter",
-    "Word Cloud",
-    "Ngram of Words",
-    "Sentiment (Bullying)",
-    "Sentiment (Classification)",
-    "Sentiment (Polarity)",
-    )
+
+rightside = st.selectbox(
+'Please select a chart for visualization2',
+('Top 10 Hashtags', 
+'Top 20 Mentions', 
+'Mostliked Tweet Owners',
+"Top 20 Emojis",
+"Number Of Emojis in a Tweet",
+"Top 10 Retweet Owners",
+"Top 20 Tweeter",
+"Word Cloud",
+"Ngram of Words",
+"Sentiment (Bullying)",
+"Sentiment (Classification)",
+"Sentiment (Polarity)",
+)
 )
 
 
